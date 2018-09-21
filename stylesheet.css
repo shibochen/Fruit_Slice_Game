@@ -1,0 +1,94 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: #333333;
+}
+
+.container{
+	height: 100%;
+	width: 80%;
+	margin: 20px auto 0 auto;
+	padding: 15px;
+	position: relative;
+}
+
+.score{
+	width: 10%;
+    color: rgb(13, 14, 13);
+    padding: 10px;
+    position: absolute;
+    left: 6.2%;
+    top: -10px;
+    border-radius: 4px;
+    text-align: center;
+    background-color:#28c9d4;
+}
+
+.trials{
+    width: 10%;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: -10px;
+    right: 6.2%;
+    background-color:#28c9d4;
+    border-radius: 4px;
+    display: none;
+}
+
+.fruitsContainer{
+	width: 90%;
+	height: 80%;
+	margin: 20px auto;
+	position: relative;
+	overflow: hidden;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+
+.startReset{
+    width: 80px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    background-color:#28c9d4;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;   
+}
+
+
+.gameOver{
+    width: 400px;
+    height: 200px;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 180px;
+    left: 30%;
+    background: linear-gradient(#5a7df2, rgb(108, 243, 232));
+    background: -webkit-linear-gradient(#5a7df2, rgb(108, 243, 232));
+    background: -o-linear-gradient(#5a7df2, rgb(108, 243, 232));
+    background: -moz-linear-gradient(#5a7df2, rgb(108, 243, 232));
+    z-index: 3;
+    display: none;    
+}
+
+#life{
+    width: 1em;
+    height: 1em;
+    margin: 0 4px;
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+}
